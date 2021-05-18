@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490048444883",
+    "project_id": "tailor-app2",
+    "storage_bucket": "tailor-app2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490048444883:android:c443c3facd1ea5c6f9f726",
+        "android_client_info": {
+          "package_name": "com.example.animatedloginui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490048444883-p849br4mdbf5fqdghv97d7r6jb3gs9le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOJYktP7XaPQPKmhqnqF21neMdpHl91E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490048444883-p849br4mdbf5fqdghv97d7r6jb3gs9le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
