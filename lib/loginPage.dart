@@ -1,4 +1,4 @@
-import 'package:animatedloginui/homePage.dart';
+import 'package:animatedloginui/screens/home/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
 
     if (firebaseUser != null) {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+          context, MaterialPageRoute(builder: (context) => HomeScreen()));
     }
   }
 
@@ -273,7 +273,7 @@ class _LoginPageState extends State<LoginPage> {
                         btnText: "Login",
                       ),
                       onTap: () {
-                        if (PasswordSignupTextEditingController.text.length <
+                        if (PasswordLoginTextEditingController.text.length <
                             6) {
                           displayToastMessage(
                               "Password must be atleast 6 Characters", context);
