@@ -1,10 +1,12 @@
 import 'package:animatedloginui/models/Measure.dart';
 import 'package:animatedloginui/screens/home/home_screen.dart';
+import 'package:animatedloginui/screens/orderCreatedPage.dart';
+import 'package:animatedloginui/screens/ordersPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
-import 'loginPage.dart';
+import 'screens/loginPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
                 child: LoginPage(),
               ),
             )
-          : HomeScreen(),
+          : OrdersPage(),
     );
   }
 }

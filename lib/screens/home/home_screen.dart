@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:animatedloginui/constants.dart';
 import 'package:animatedloginui/screens/home/components/body.dart';
+import 'package:get/get.dart';
+
+import '../ordersPage.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -21,6 +23,13 @@ class HomeScreen extends StatelessWidget {
         FontAwesomeIcons.user,
         size: 40,
       ),
+      actions: <Widget>[
+        IconButton(
+            icon: Icon(FontAwesomeIcons.shoppingCart, size: 30),
+            onPressed: () {
+              Get.to(OrdersPage()); //! Need attention
+            })
+      ],
     );
   }
 }

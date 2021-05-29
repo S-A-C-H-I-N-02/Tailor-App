@@ -74,6 +74,18 @@ class Body extends StatelessWidget {
                       SizedBox(height: kDefaultPaddin / 2.5),
                       labeltextbuilder("Collar", collarTextEditingController),
                       SizedBox(height: kDefaultPaddin / 2),
+                      SizedBox(height: kDefaultPaddin * 2),
+                      Text(
+                        "Customer Details",
+                        style: TextStyle(
+                            fontSize: 20.0, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: kDefaultPaddin / 2),
+                      labeltextbuilder(
+                          "Customer Name", customernameTextEditingController),
+                      SizedBox(height: kDefaultPaddin / 2.5),
+                      labeltextbuilder(
+                          "Contact No.", contactnoTextEditingController),
                       AddToCart(product: product)
                     ],
                   ),
